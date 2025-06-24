@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Baba Barışalım Mı?</title>
+<style>body{text-align:center;margin-top:100px;font-family:sans-serif;}button{font-size:24px;padding:10px 20px;margin:20px;}#yes{background:green;color:white;}#no{background:red;color:white;position:relative;}</style>
+</head><body>
+<h1>Baba benimle barışır mısın? 😊</h1>
+<button id="yes" onclick="baristik()">Evet</button>
+<button id="no" onclick="hayir()">Hayır</button>
+<script>let c=0;function baristik(){document.body.innerHTML='<h1>🎉 Harikasın Baba! Hadi sarılmaya! 💙</h1>';}function hayir(){c++;let b=document.getElementById('no');b.style.fontSize=(24-c*3)+'px';if(c>=5){b.disabled=true;b.innerText='Olmaz artık 😢';} }</script>
+</body></html>
